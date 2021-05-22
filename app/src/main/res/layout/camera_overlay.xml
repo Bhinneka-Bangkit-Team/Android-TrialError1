@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.ocha.prototype_final.CustomView.camera.GraphicOverlay
+        android:id="@+id/camera_preview_grapic_overlay"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        />
+    <FrameLayout
+        android:id="@+id/static_overlay_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/transparent">
+        <ProgressBar
+            android:id="@+id/search_progress"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_gravity="center"
+            android:indeterminate="true"
+            android:indeterminateTint="@color/white"
+            android:indeterminateTintMode="src_in"
+            android:visibility="gone"
+            />
+        
+        <com.google.android.material.chip.Chip
+            android:id="@+id/bottom_prompt_chip"
+            style="@style/Widget.MaterialComponents.Chip.Entry"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center_horizontal"
+            android:layout_marginBottom="28dp"
+            android:textSize="14sp"
+            android:visibility="gone"
+            app:chipCornerRadius="8dp"
+            app:chipSurfaceColor="@color/dark"
+            app:closeIconVisible="false"
+            android:checkable="false"
+            android:clickable="false"
+            />
+        <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+            android:id="@+id/product_search_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center_horizontal"
+            android:layout_marginBottom="24dp"
+            android:fontFamily="sans-serif"
+            android:text="Search object"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:visibility="gone"
+            app:icon="@drawable/ic_baseline_image_search_24"
+            app:iconTint="@color/black" />
+    </FrameLayout>
+
+</merge>

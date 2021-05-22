@@ -15,8 +15,7 @@ class LiveDetectionActivity : AppCompatActivity() {
             Classifier.Model.QUANTIZED_EFFICIENTNET,
             Classifier.Device.GPU,
             1
-        )
-        )
+        ))
     }
 
 

@@ -1,14 +1,36 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:keepScreenOn="true"
     tools:context=".LiveDetectionActivity">
+    <com.ocha.prototype_final.CustomView.camera.CameraSourcePreview
+        android:id="@id/preview_camera"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <include layout="@layout/camera_overlay"/>
+    </com.ocha.prototype_final.CustomView.camera.CameraSourcePreview>
+
+    <include layout="@layout/top_widget_live_detection"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top"
+        />
     
     <com.ocha.prototype_final.CustomView.search.SheetBottomView
         android:id="@+id/preview_camera"
         android:layout_width="match_parent"
         android:layout_height="match_parent"/>
+    <include
+        android:id="@+id/bottom_sheet"
+        layout="@layout/bottom_sheet"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        app:behavior_hideable="true"
+        app:layout_behavior="com.google.android.material.bottomsheet.BottomSheetBehavior"
+        />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
