@@ -169,7 +169,11 @@ abstract class Classifier protected constructor(activity: Activity?, device:Devi
 
         @Throws(IOException::class)
         fun create(activity: Activity?,model:Model,device: Device?,numThread: Int):Classifier{
-            return throw UnsupportedOperationException()
+            return if(model == Model.QUANTIZED_EFFICIENTNET){
+                ClassifierQuantizedEfficientNet(activity,device,numThread)
+            }else{
+                throw UnsupportedOperationException()
+            }
         }
 
         private fun getTopProbability(labelProb:Map<String,Float>):List<Recognition>{

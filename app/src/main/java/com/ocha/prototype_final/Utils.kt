@@ -1,7 +1,9 @@
 package com.ocha.prototype_final
 
 import android.app.Activity
+import android.content.Context
 import android.content.Intent
+import android.content.res.Configuration
 
 object Utils {
 
@@ -19,5 +21,6 @@ object Utils {
         activity.startActivityForResult(intent, REQUEST_CODE_PHOTO_LIBRARY)
     }
 
+    fun isPotraitMode(context: Context):Boolean = context.resources.configuration.orientation == Configuration.ORIENTATION_PORTRAIT
 
 }

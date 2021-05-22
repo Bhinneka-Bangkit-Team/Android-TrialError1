@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "653621354899",
+    "project_id": "prototype-final-22",
+    "storage_bucket": "prototype-final-22.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:653621354899:android:8cb4000e794c4a8d128866",
+        "android_client_info": {
+          "package_name": "com.ocha.prototype_final"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "653621354899-1c5kn2lp93u10cmh9ka3hullfl4kl102.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCsY_TIhHiI_yXsU820tVR39SFh7q_qsTg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "653621354899-1c5kn2lp93u10cmh9ka3hullfl4kl102.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
