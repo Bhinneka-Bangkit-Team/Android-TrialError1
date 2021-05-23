@@ -9,6 +9,12 @@ import com.ocha.prototype_final.R
 
 object UtilsPreference {
 
+    val  isAutoSearchEnable = true
+    val isMultipleObjectsMode = false
+    val isClassificationEnabled = true
+
+
+
     fun getUserSpecifiedPreviewSize(context: Context): CameraPair? {
         return try {
             val previewSizePrefKey = "rcpvs"
@@ -25,5 +31,13 @@ object UtilsPreference {
     fun saveStringPreference(context: Context, @StringRes prefKeyId: Int, value: String?){
         PreferenceManager.getDefaultSharedPreferences(context).edit().putString(context.getString(prefKeyId),value).apply()
     }
+
+    fun getConfirmationTimeMs(): Int = when {
+        isMultipleObjectsMode -> 300
+        isAutoSearchEnable -> 1500
+        else -> 500
+    }
+
+
 
 }

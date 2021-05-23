@@ -4,4 +4,15 @@
     <dimen name="bounding_box_radius">10dp</dimen>
     <dimen name="thumbnail_height">120dp</dimen>
     <dimen name="thumbnail_margin">24dp</dimen>
+    <dimen name="object_selection_distance_threshold">24dp</dimen>
+    <dimen name="bounding_box_stroke_width">1dp</dimen>
+    <dimen name="bounding_box_confirmed_stroke_width">2dp</dimen>
+    <dimen name="bounding_box_corner_radius">12dp</dimen>
+    <dimen name="object_reticle_outer_ring_stroke_radius">12dp</dimen>
+    <dimen name="object_reticle_outer_ring_fill_radius">22dp</dimen>
+    <dimen name="object_reticle_inner_ring_stroke_width">2dp</dimen>
+    <dimen name="object_reticle_inner_ring_stroke_radius">2dp</dimen>
+    <dimen name="object_reticle_outer_ring_stroke_width">2dp</dimen>
+    <dimen name="object_dot_radius">10dp</dimen>
+    <dimen name="object_reticle_ripple_stroke_width">4dp</dimen>
 </resources>
